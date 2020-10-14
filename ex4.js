@@ -72,11 +72,19 @@ function getMax (array) {
 
 // 4.6 Shift
 // Create a function that shift the elements of an array.
+// function getShift (array) {
+//   array.shift()
+//   return array
+// }
+
 function getShift (array) {
-  array.shift()
-  return array
+  var newArray = []
+  for (i = 1; i < array.length; i++) {
+    newArray.push(array[i])
+  }
+  return newArray
 }
- // console.log(getShift([1, 2, 3])) => [2, 3]
+ console.log(getShift([1, 2, 3])) 
 
 
 
