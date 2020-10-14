@@ -10,6 +10,7 @@ const message = "SOS"
 function marsos (str) {
   const splitStr = str.match(/.{1,3}/g)
   // =>  ["SOF", "SOS", "SIS", "SOW"]
+  // ou const splitStr = str.length / 3
   var count = 0
 
   for (i = 0; i < splitStr.length; i++) {

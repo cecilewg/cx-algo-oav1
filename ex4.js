@@ -84,13 +84,14 @@ function getShift (array) {
   }
   return newArray
 }
- console.log(getShift([1, 2, 3])) 
+ // console.log(getShift([1, 2, 3])) => [2, 3]
 
 
 
 // 4.7 Diff
 // Create a function that calculates the largest deviation in an array (the deviation is the absolute value of the difference of two elements)
 function getDiff (array) {
-  return getMax(array) - getMin(array)
+  var difference = getMax(array) - getMin(array)
+  return Math.abs(difference)
 }
-// console.log(getDiff([1, 2, 3, 4])) => 4 - 1 = 3
+// console.log(getDiff([1, 2, 3, 4])) => 3
