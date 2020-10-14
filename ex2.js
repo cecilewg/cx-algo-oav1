@@ -16,7 +16,8 @@ function isAPangram (sentence) {
 console.log(isAPangram("The quick brown fox jumps over the lazy dog"))
 console.log(isAPangram("Hello Efrei"))
 
-// export const isPangram = (sentence) => {
+// 2e solution
+// const isPangram = (sentence) => {
 //
 //   const abc = 'abcdefghijklmnopqrstuvwxyz';
 //   let lowerSentence = sentence.trim().toLowerCase();
