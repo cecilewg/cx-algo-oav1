@@ -14,14 +14,18 @@ function isUpperCase (character) {
 }
 
 function howManyCamelCase (str) {
-  var words = 1
+  if(!str) {
+    return 0
+  }
+
+  var words = 1  //apple
 
   for (i = 0; i < str.length; i++) {
-    if(isUpperCase(str.charAt(i))) {
+    if(isUpperCase(str[i])) {
       words += 1
     }
   }
   return words
 }
 
-// console.log(howManyCamelCase('appleOrangePearGrapes'))
+// console.log(howManyCamelCase('appleOrangePearGrapes')) => 4

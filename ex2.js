@@ -5,8 +5,8 @@
 
 function isAPangram (sentence) {
   const lowerSentence = sentence.toLowerCase()
-  for(let char of 'abcdefghijklmnopqrstuvwxyz'){
-    if(!lowerSentence.includes(char)){
+  for (let char of 'abcdefghijklmnopqrstuvwxyz'){
+    if (!lowerSentence.includes(char)){
          return false
        }
     }
