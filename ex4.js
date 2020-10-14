@@ -20,9 +20,7 @@ function getOccurence (array, char) {
 // Create a function that calculate the average of the elements of an array.
 
 function getAverage (array) {
-  for (i = 0; i < array.length; i++) {
-    return array.reduce((a, b) => a + b, 0) / array.length
-  }
+  return array.reduce((a, b) => a + b, 0) / array.length
 }
 // console.log(getAverage([12, 15, 20, 10])) => 14,25
 
@@ -32,9 +30,21 @@ function getAverage (array) {
 // Create a function that calculate the minimum of the elements of an array.
 
 function getMin (array) {
-  return Math.min.apply(Math, array)
+  var num = array[0]
+
+  for (i = 0; i < array.length; i++) {
+    if (array[i] < num) {
+      num = array[i]
+    }
+  }
+  return num
 }
-// console.log(getMin([12, 15, 20, 10])) => 10
+// console.log(getMin([15, 12, 20, 10])) => 10
+
+// 2e solution raccourci
+// function getMin (array) {
+//   return Math.min.apply(Math, array)
+// }
 
 
 
@@ -42,9 +52,21 @@ function getMin (array) {
 // Create a function that calculate the maximum of the elements of an array.
 
 function getMax (array) {
-  return Math.max.apply(Math, array)
+  var num = array[0]
+
+  for (i = 0; i < array.length; i++) {
+    if (array[i] > num) {
+      num = array[i]
+    }
+  }
+  return num
 }
 // console.log(getMax([12, 15, 20, 10])) => 20
+
+// 2e solution raccourci
+// function getMax (array) {
+//   return Math.max.apply(Math, array)
+// }
 
 
 
@@ -63,5 +85,4 @@ function getShift (array) {
 function getDiff (array) {
   return getMax(array) - getMin(array)
 }
-
 // console.log(getDiff([1, 2, 3, 4])) => 4 - 1 = 3

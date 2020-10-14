@@ -5,7 +5,7 @@
 //
 // The goal of the function is to determine how many letters were altered during transmission.
 
-const char = "SOS"
+const message = "SOS"
 
 function marsos (str) {
   const splitStr = str.match(/.{1,3}/g)
@@ -13,7 +13,7 @@ function marsos (str) {
   var count = 0
 
   for (i = 0; i < splitStr.length; i++) {
-    if (splitStr[i] !== char) {
+    if (splitStr[i] !== message) {
       count += 1
     }
   }
