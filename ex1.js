@@ -24,4 +24,4 @@ function howManyCamelCase (str) {
   return words
 }
 
-console.log(howManyCamelCase('appleOrangePearGrapes'))
+// console.log(howManyCamelCase('appleOrangePearGrapes'))
