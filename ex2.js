@@ -13,8 +13,8 @@ function isAPangram (sentence) {
   return true
 }
 
-console.log(isAPangram("The quick brown fox jumps over the lazy dog"))
-console.log(isAPangram("Hello Efrei"))
+// console.log(isAPangram("The quick brown fox jumps over the lazy dog"))
+// console.log(isAPangram("Hello Efrei"))
 
 // 2e solution
 // const isPangram = (sentence) => {
