@@ -1,0 +1,67 @@
+// 04 Hello, Array
+// 4.1 Count
+// Create a function that take an array as an input and calculate the number of occurrences of a given element in an array.
+
+function getOccurence (array, char) {
+  count = 0
+  for (i = 0; i < array.length; i++) {
+    if (array[i] == char) {
+      count += 1
+    }
+  }
+  return count
+}
+// console.log(getOcurence(['apple', 'apple', 'apple', 'orange', 'pear'], 'apple'))
+// => 3
+
+
+
+// 4.2 Average
+// Create a function that calculate the average of the elements of an array.
+
+function getAverage (array) {
+  for (i = 0; i < array.length; i++) {
+    return array.reduce((a, b) => a + b, 0) / array.length
+  }
+}
+// console.log(getAverage([12, 15, 20, 10])) => 14,25
+
+
+
+// 4.3 Min
+// Create a function that calculate the minimum of the elements of an array.
+
+function getMin (array) {
+  return Math.min.apply(Math, array)
+}
+// console.log(getMin([12, 15, 20, 10])) => 10
+
+
+
+// 4.4 Max
+// Create a function that calculate the maximum of the elements of an array.
+
+function getMax (array) {
+  return Math.max.apply(Math, array)
+}
+// console.log(getMax([12, 15, 20, 10])) => 20
+
+
+
+// 4.6 Shift
+// Create a function that shift the elements of an array.
+function getShift (array) {
+  array.shift()
+  return array
+}
+ // console.log(getShift([1, 2, 3])) => [2, 3]
+
+
+
+// 4.7 Diff
+// Create a function that calculates the largest deviation in an array (the deviation is the absolute value of the difference of two elements)
+function getDiff (array) {
+  return getMax(array) - getMin(array)
+}
+
+// console.log(getDiff([1, 2, 3, 4])) => 4 - 1 = 3
